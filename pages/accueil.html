@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/accueil.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="accueil">
+      <img class="user-icon" alt="" src="../public/user@2x.png" id="userIcon" />
+
+      <div class="bonjour">Bonjour</div>
+      <img class="menu-icon" alt="" src="../public/menu@2x.png" id="menuIcon" />
+
+      <img class="group-7-1" alt="" src="../public/group-7-1@2x.png" />
+
+      <div class="accueil-child"></div>
+      <img class="frame-12-1" alt="" src="../public/frame-12-1@2x.png" />
+
+      <img class="frame-13-1" alt="" src="../public/frame-13-1@2x.png" />
+
+      <img class="frame-11-1" alt="" src="../public/frame-11-1@2x.png" />
+
+      <img class="frame-14-1" alt="" src="../public/frame-14-1@2x.png" />
+
+      <div class="cours-recommander">Cours recommander</div>
+      <img class="frame-18-1" alt="" src="../public/frame-18-1@2x.png" />
+
+      <img class="frame-15-1" alt="" src="../public/frame-15-1@2x.png" />
+
+      <img class="frame-2-1" alt="" src="../public/frame-2-1@2x.png" />
+
+      <img
+        class="frame-3-1"
+        alt=""
+        src="../public/frame-3-1@2x.png"
+        id="frame31"
+      />
+
+      <img
+        class="frame-4-1"
+        alt=""
+        src="../public/frame-4-1@2x.png"
+        id="frame41"
+      />
+
+      <img
+        class="frame-2-2"
+        alt=""
+        src="../public/frame-2-2@2x.png"
+        id="frame22"
+      />
+    </div>
+
+    <div id="connexionContainer" class="popup-overlay" style="display: none">
+      <div class="connexion">
+        <img class="frame-19-1" alt="" src="../public/frame-19-1@2x.png" />
+
+        <img class="frame-6-3" alt="" src="../public/frame-6-3@2x.png" />
+
+        <div class="mot-de-passe">Mot de passe oublié ?</div>
+        <div class="connexion-child"></div>
+        <div class="connexion-item"></div>
+        <b class="connexion1">Connexion</b>
+      </div>
+    </div>
+
+    <div id="menuContainer" class="popup-overlay" style="display: none">
+      <div class="menu">
+        <img class="frame-35-1" alt="" src="../public/frame-35-1@2x.png" />
+
+        <img class="frame-34-1" alt="" src="../public/frame-34-1@2x.png" />
+
+        <img class="frame-33-1" alt="" src="../public/frame-33-1@2x.png" />
+
+        <div class="menu-child"></div>
+        <img class="frame-32-1" alt="" src="../public/frame-32-1@2x.png" />
+
+        <div class="eduxpert">EduXpert</div>
+      </div>
+    </div>
+
+    <script>
+      var userIcon = document.getElementById("userIcon");
+      if (userIcon) {
+        userIcon.addEventListener("click", function () {
+          var popup = document.getElementById("connexionContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var menuIcon = document.getElementById("menuIcon");
+      if (menuIcon) {
+        menuIcon.addEventListener("click", function () {
+          var popup = document.getElementById("menuContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var frame31 = document.getElementById("frame31");
+      if (frame31) {
+        frame31.addEventListener("click", function (e) {
+          window.location.href = "./cours.html";
+        });
+      }
+      
+      var frame41 = document.getElementById("frame41");
+      if (frame41) {
+        frame41.addEventListener("click", function (e) {
+          window.location.href = "./notifications.html";
+        });
+      }
+      
+      var frame22 = document.getElementById("frame22");
+      if (frame22) {
+        frame22.addEventListener("click", function (e) {
+          window.location.href = "./parametre.html";
+        });
+      }
+      </script>
+  </body>
+</html>

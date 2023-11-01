@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/cours.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="cours">
+      <img
+        class="frame-7-2"
+        alt=""
+        src="../public/frame-7-2@2x.png"
+        id="frame72"
+      />
+
+      <img class="frame-6-2" alt="" src="../public/frame-6-2@2x.png" />
+
+      <img
+        class="frame-4-2"
+        alt=""
+        src="../public/frame-4-1@2x.png"
+        id="frame42"
+      />
+
+      <img
+        class="frame-2-4"
+        alt=""
+        src="../public/frame-2-2@2x.png"
+        id="frame24"
+      />
+
+      <img class="demarage-2-icon" alt="" src="../public/demarage-2@2x.png" />
+
+      <div class="cours-child"></div>
+      <img class="user-icon1" alt="" src="../public/user@2x.png" id="userIcon" />
+
+      <img class="menu-icon1" alt="" src="../public/menu@2x.png" id="menuIcon" />
+
+      <img class="group-1-1" alt="" src="../public/group-1-1@2x.png" />
+
+      <img class="group-2-1" alt="" src="../public/group-2-1@2x.png" />
+
+      <img class="group-3-1" alt="" src="../public/group-3-1@2x.png" />
+
+      <img
+        class="group-4-1"
+        alt=""
+        src="../public/group-4-1@2x.png"
+        id="group41"
+      />
+
+      <img
+        class="group-5-1"
+        alt=""
+        src="../public/group-5-1@2x.png"
+        id="group51"
+      />
+
+      <img
+        class="group-6-1"
+        alt=""
+        src="../public/group-6-1@2x.png"
+        id="group61"
+      />
+
+      <div class="les-cours">Les cours</div>
+      <img class="frame-22-1" alt="" src="../public/frame-22-1@2x.png" />
+
+      <img class="frame-23-1" alt="" src="../public/frame-23-1@2x.png" />
+    </div>
+
+    <div id="connexionContainer" class="popup-overlay" style="display: none">
+      <div class="connexion">
+        <img class="frame-19-1" alt="" src="../public/frame-19-1@2x.png" />
+
+        <img class="frame-6-3" alt="" src="../public/frame-6-3@2x.png" />
+
+        <div class="mot-de-passe">Mot de passe oublié ?</div>
+        <div class="connexion-child"></div>
+        <div class="connexion-item"></div>
+        <b class="connexion1">Connexion</b>
+      </div>
+    </div>
+
+    <div id="menuContainer" class="popup-overlay" style="display: none">
+      <div class="menu">
+        <img class="frame-35-1" alt="" src="../public/frame-35-1@2x.png" />
+
+        <img class="frame-34-1" alt="" src="../public/frame-34-1@2x.png" />
+
+        <img class="frame-33-1" alt="" src="../public/frame-33-1@2x.png" />
+
+        <div class="menu-child"></div>
+        <img class="frame-32-1" alt="" src="../public/frame-32-1@2x.png" />
+
+        <div class="eduxpert">EduXpert</div>
+      </div>
+    </div>
+
+    <script>
+      var frame72 = document.getElementById("frame72");
+      if (frame72) {
+        frame72.addEventListener("click", function (e) {
+          window.location.href = "./accueil.html";
+        });
+      }
+      
+      var frame42 = document.getElementById("frame42");
+      if (frame42) {
+        frame42.addEventListener("click", function (e) {
+          window.location.href = "./notifications.html";
+        });
+      }
+      
+      var frame24 = document.getElementById("frame24");
+      if (frame24) {
+        frame24.addEventListener("click", function (e) {
+          window.location.href = "./parametre.html";
+        });
+      }
+      
+      var userIcon = document.getElementById("userIcon");
+      if (userIcon) {
+        userIcon.addEventListener("click", function () {
+          var popup = document.getElementById("connexionContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var menuIcon = document.getElementById("menuIcon");
+      if (menuIcon) {
+        menuIcon.addEventListener("click", function () {
+          var popup = document.getElementById("menuContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var group41 = document.getElementById("group41");
+      if (group41) {
+        group41.addEventListener("click", function (e) {
+          window.location.href = "./videos.html";
+        });
+      }
+      
+      var group51 = document.getElementById("group51");
+      if (group51) {
+        group51.addEventListener("click", function (e) {
+          window.location.href = "./videos.html";
+        });
+      }
+      
+      var group61 = document.getElementById("group61");
+      if (group61) {
+        group61.addEventListener("click", function (e) {
+          window.location.href = "./fichier-p-d-f.html";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/notifications.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="notifications">
+      <img
+        class="frame-7-3"
+        alt=""
+        src="../public/frame-7-2@2x.png"
+        id="frame73"
+      />
+
+      <img
+        class="frame-3-2"
+        alt=""
+        src="../public/frame-3-1@2x.png"
+        id="frame32"
+      />
+
+      <img class="frame-4-3" alt="" src="../public/frame-4-3@2x.png" />
+
+      <img
+        class="frame-2-5"
+        alt=""
+        src="../public/frame-2-2@2x.png"
+        id="frame25"
+      />
+
+      <img class="frame-24-1" alt="" src="../public/frame-24-1@2x.png" />
+
+      <img class="frame-42-2" alt="" src="../public/frame-42-2@2x.png" />
+    </div>
+
+    <script>
+      var frame73 = document.getElementById("frame73");
+      if (frame73) {
+        frame73.addEventListener("click", function (e) {
+          window.location.href = "./accueil.html";
+        });
+      }
+      
+      var frame32 = document.getElementById("frame32");
+      if (frame32) {
+        frame32.addEventListener("click", function (e) {
+          window.location.href = "./cours.html";
+        });
+      }
+      
+      var frame25 = document.getElementById("frame25");
+      if (frame25) {
+        frame25.addEventListener("click", function (e) {
+          window.location.href = "./parametre.html";
+        });
+      }
+      </script>
+  </body>
+</html>

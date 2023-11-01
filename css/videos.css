@@ -1,0 +1,50 @@
+.frame-25-2,
+.frame-42-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 60px;
+  object-fit: cover;
+}
+.frame-42-1 {
+  top: 21px;
+  left: 19px;
+  width: 30px;
+  height: 30px;
+}
+.frame-2-6,
+.frame-3-22,
+.frame-4-32,
+.frame-7-32 {
+  position: absolute;
+  top: 734px;
+  left: 26px;
+  width: 51px;
+  height: 35px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.frame-2-6,
+.frame-3-22,
+.frame-4-32 {
+  left: 107px;
+  width: 52px;
+}
+.frame-2-6,
+.frame-4-32 {
+  left: 189px;
+  width: 61px;
+}
+.frame-2-6 {
+  left: 280px;
+  width: 54px;
+  height: 37px;
+}
+.videos {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}

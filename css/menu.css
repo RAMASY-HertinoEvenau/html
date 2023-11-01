@@ -1,0 +1,56 @@
+.frame-33-1,
+.frame-34-1,
+.frame-35-1 {
+  position: absolute;
+  top: 177px;
+  left: 0;
+  width: 186px;
+  height: 38px;
+  object-fit: cover;
+}
+.frame-33-1,
+.frame-34-1 {
+  top: 144px;
+  left: 31px;
+  width: 150px;
+  height: 25px;
+}
+.frame-33-1 {
+  top: 109px;
+}
+.menu-child {
+  position: absolute;
+  top: 92px;
+  left: 29px;
+  border-right: 2px solid #bdbdbd;
+  box-sizing: border-box;
+  width: 2px;
+  height: 82px;
+}
+.frame-32-1 {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 186px;
+  height: 38px;
+  object-fit: cover;
+}
+.eduxpert {
+  position: absolute;
+  top: 10px;
+  left: 12%;
+  font-weight: 600;
+}
+.menu {
+  position: relative;
+  background-color: var(--color-white);
+  width: 250px;
+  height: 800px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

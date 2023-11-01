@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/demarrage.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="demarrage">
+      <img class="demarage-1-icon" alt="" src="../public/demarage-1@2x.png" />
+
+      <img
+        class="frame-9-1"
+        alt=""
+        src="../public/frame-9-1@2x.png"
+        id="frame91"
+      />
+    </div>
+
+    <script>
+      var frame91 = document.getElementById("frame91");
+      if (frame91) {
+        frame91.addEventListener("click", function (e) {
+          window.location.href = "./accueil.html";
+        });
+      }
+      </script>
+  </body>
+</html>

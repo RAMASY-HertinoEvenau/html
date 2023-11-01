@@ -1,0 +1,74 @@
+.frame-36-1,
+.frame-6-4 {
+  position: absolute;
+  object-fit: cover;
+}
+.frame-36-1 {
+  top: 401px;
+  left: calc(50% - 90px);
+  width: 180px;
+  height: 14px;
+}
+.frame-6-4 {
+  width: 39.2%;
+  top: 348px;
+  right: 30.4%;
+  left: 30.4%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 41px;
+}
+.inscription-child,
+.inscription-child1,
+.inscription-inner,
+.inscription-item,
+.rectangle-div {
+  position: absolute;
+  width: 76%;
+  top: 293px;
+  right: 10.8%;
+  left: 13.2%;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 30px;
+}
+.inscription-child1,
+.inscription-inner,
+.inscription-item,
+.rectangle-div {
+  top: 243px;
+}
+.inscription-child1,
+.inscription-inner,
+.rectangle-div {
+  top: 193px;
+}
+.inscription-child1,
+.rectangle-div {
+  top: 143px;
+}
+.inscription-child1 {
+  top: 93px;
+}
+.inscription1 {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 50px);
+  display: inline-block;
+  width: 109px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.inscription {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  width: 100%;
+  height: 441px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}

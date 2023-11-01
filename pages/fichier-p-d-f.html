@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/fichier-p-d-f.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="fichierpdf">
+      <img
+        class="frame-7-33"
+        alt=""
+        src="../public/frame-7-2@2x.png"
+        id="frame73"
+      />
+
+      <img
+        class="frame-3-23"
+        alt=""
+        src="../public/frame-3-1@2x.png"
+        id="frame32"
+      />
+
+      <img
+        class="frame-4-33"
+        alt=""
+        src="../public/frame-4-1@2x.png"
+        id="frame43"
+      />
+
+      <img
+        class="frame-2-61"
+        alt=""
+        src="../public/frame-2-2@2x.png"
+        id="frame26"
+      />
+
+      <img class="frame-25-3" alt="" src="../public/frame-25-3@2x.png" />
+
+      <img class="frame-42-22" alt="" src="../public/frame-42-2@2x.png" />
+    </div>
+
+    <script>
+      var frame73 = document.getElementById("frame73");
+      if (frame73) {
+        frame73.addEventListener("click", function (e) {
+          window.location.href = "./accueil.html";
+        });
+      }
+      
+      var frame32 = document.getElementById("frame32");
+      if (frame32) {
+        frame32.addEventListener("click", function (e) {
+          window.location.href = "./cours.html";
+        });
+      }
+      
+      var frame43 = document.getElementById("frame43");
+      if (frame43) {
+        frame43.addEventListener("click", function (e) {
+          window.location.href = "./notifications.html";
+        });
+      }
+      
+      var frame26 = document.getElementById("frame26");
+      if (frame26) {
+        frame26.addEventListener("click", function (e) {
+          window.location.href = "./parametre.html";
+        });
+      }
+      </script>
+  </body>
+</html>

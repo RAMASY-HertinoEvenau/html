@@ -1,0 +1,166 @@
+.frame-3-21,
+.frame-4-31,
+.frame-7-31 {
+  position: absolute;
+  top: 734px;
+  left: 26px;
+  width: 51px;
+  height: 35px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.frame-3-21,
+.frame-4-31 {
+  left: 107px;
+  width: 52px;
+}
+.frame-4-31 {
+  left: 189px;
+  width: 61px;
+}
+.frame-25-1,
+.frame-42-21,
+.frame-8-2 {
+  position: absolute;
+  top: 734px;
+  left: 280px;
+  width: 54px;
+  height: 37px;
+  object-fit: cover;
+}
+.frame-25-1,
+.frame-42-21 {
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 60px;
+}
+.frame-42-21 {
+  top: 21px;
+  left: 19px;
+  width: 30px;
+  height: 30px;
+}
+.notification {
+  position: absolute;
+  top: 70px;
+  left: 2.78%;
+  font-weight: 600;
+}
+.frame-27-1,
+.frame-28-1,
+.frame-29-1,
+.frame-30-1 {
+  position: absolute;
+  top: 97px;
+  left: 10px;
+  width: 340px;
+  height: 40px;
+  object-fit: cover;
+}
+.frame-28-1,
+.frame-29-1,
+.frame-30-1 {
+  top: 142px;
+}
+.frame-29-1,
+.frame-30-1 {
+  top: 187px;
+}
+.frame-30-1 {
+  top: 232px;
+}
+.general {
+  position: absolute;
+  top: 282px;
+  left: 2.78%;
+  font-weight: 600;
+}
+.frame-27-2,
+.frame-28-2,
+.frame-29-2 {
+  position: absolute;
+  top: 309px;
+  left: 10px;
+  width: 340px;
+  height: 40px;
+  object-fit: cover;
+}
+.frame-28-2,
+.frame-29-2 {
+  top: 354px;
+}
+.frame-29-2 {
+  top: 399px;
+}
+.plus-doption {
+  position: absolute;
+  top: 449px;
+  left: 2.78%;
+  font-weight: 600;
+}
+.frame-27-3,
+.frame-28-3,
+.frame-29-3,
+.frame-30-2,
+.frame-31-1 {
+  position: absolute;
+  top: 476px;
+  left: 10px;
+  width: 340px;
+  height: 40px;
+  object-fit: cover;
+}
+.frame-28-3,
+.frame-29-3,
+.frame-30-2,
+.frame-31-1 {
+  top: 521px;
+}
+.frame-29-3,
+.frame-30-2,
+.frame-31-1 {
+  top: 566px;
+}
+.frame-30-2,
+.frame-31-1 {
+  top: 611px;
+}
+.frame-31-1 {
+  top: 656px;
+}
+.ellipse-div,
+.parametre-child,
+.parametre-inner,
+.parametre-item {
+  position: absolute;
+  top: 104px;
+  left: 302px;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  width: 25px;
+  height: 25px;
+}
+.ellipse-div,
+.parametre-inner,
+.parametre-item {
+  top: 149px;
+}
+.ellipse-div,
+.parametre-inner {
+  top: 194px;
+}
+.ellipse-div {
+  top: 239px;
+}
+.parametre {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,23 @@
+.demarage-1-icon,
+.frame-9-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 800px;
+  object-fit: cover;
+}
+.frame-9-1 {
+  top: 722px;
+  left: 200px;
+  width: 142px;
+  height: 38px;
+  cursor: pointer;
+}
+.demarrage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
