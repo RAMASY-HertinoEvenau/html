@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playlist YouTube</title>
+</head>
+<body>
+  <div id="playlist"></div>
+
+  <script>
+    // Remplacez 'VOTRE_API_KEY' par votre clé API YouTube
+    var API_KEY = 'AIzaSyDy3wsNpJQ1RutSRnL2aJ2grS6i1GAEBxk';
+    var PLAYLIST_ID = 'PLLBWkn1N0gl7AO56vpDPWsKeDfYjEaZWT';
+    var MAX_RESULTS = 10; // Nombre maximal de vidéos à afficher
+
+    // Création de l'URL de l'API
+    var apiUrl = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=' + MAX_RESULTS + '&playlistId=' + PLAYLIST_ID + '&key=' + API_KEY;
+
+    // Effectuer une requête AJAX pour obtenir les données de la playlist
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', apiUrl, true);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        var videos = data.items;
+
+        // Boucle pour afficher les vidéos
+        for (var i = 0; i < videos.length; i++) {
+          var videoId = videos[i].snippet.resourceId.videoId;
+          var videoTitle = videos[i].snippet.title;
+
+          // Créer un élément iframe pour incorporer la vidéo
+          var iframe = document.createElement('iframe');
+          iframe.src = 'https://www.youtube.com/embed/' + videoId;
+          iframe.width = 560;
+          iframe.height = 315;
+
+          // Créer un élément titre pour afficher le titre de la vidéo
+          var title = document.createElement('h2');
+          title.textContent = videoTitle;
+
+          // Ajouter l'iframe et le titre à la page
+          document.getElementById('playlist').appendChild(title);
+          document.getElementById('playlist').appendChild(iframe);
+        }
+      }
+    };
+    xhr.send();
+  </script>
+</body>
+</html>
